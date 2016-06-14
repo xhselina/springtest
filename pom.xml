@@ -17,6 +17,7 @@
   <modules>
     <module>springtest-guides</module>
     <module>springtest-framework</module>
+    <module>springboot-service</module>
   </modules>
 
   <parent>
@@ -24,5 +25,18 @@
     <artifactId>spring-boot-starter-parent</artifactId>
     <version>1.3.5.RELEASE</version>
   </parent>
+
+  <repositories>
+    <repository>
+      <id>spring-releases</id>
+      <url>https://repo.spring.io/libs-release</url>
+    </repository>
+  </repositories>
+  <pluginRepositories>
+    <pluginRepository>
+      <id>spring-releases</id>
+      <url>https://repo.spring.io/libs-release</url>
+    </pluginRepository>
+  </pluginRepositories>
 
 </project>
