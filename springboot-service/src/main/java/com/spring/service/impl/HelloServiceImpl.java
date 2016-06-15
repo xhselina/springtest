@@ -11,7 +11,7 @@ import java.util.Date;
  * @Author <a href="mailto:jeffreyji@yeah.net">jeffrey</a>
  * @Date 2016/6/14 17:37.
  */
-
+// 这里的@Service是 dubbo提供的注解
 @Service
 public class HelloServiceImpl implements HelloService {
 
