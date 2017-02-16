@@ -2,6 +2,7 @@ package com.spring.guides.task;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
 /**
@@ -9,10 +10,14 @@ import org.springframework.scheduling.annotation.EnableScheduling;
  * @Author <a href="mailto:jeffreyji@yeah.net">jeffrey</a>
  * @Date 2016/5/13 16:48.
  */
-@SpringBootApplication
-@EnableScheduling
+@SpringBootApplication // same as @Configuration @EnableAutoConfiguration @ComponentScan
+//@Configuration
+//@EnableScheduling
 public class Client {
     public static void main(String[] args) {
-        SpringApplication.run(Client.class,args);
+        SpringApplication app = new SpringApplication(Client.class);
+        app.setShowBanner(false);
+        app.run(args);
+//        SpringApplication.run(Client.class,args);
     }
 }
