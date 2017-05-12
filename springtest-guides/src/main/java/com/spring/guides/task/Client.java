@@ -16,7 +16,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 public class Client {
     public static void main(String[] args) {
         SpringApplication app = new SpringApplication(Client.class);
-        app.setShowBanner(false);
+//        app.set(false);
         app.run(args);
 //        SpringApplication.run(Client.class,args);
     }
