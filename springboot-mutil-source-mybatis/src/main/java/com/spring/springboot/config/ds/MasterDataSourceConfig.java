@@ -22,7 +22,7 @@ import javax.sql.DataSource;
 @MapperScan(basePackages = MasterDataSourceConfig.PACKAGE, sqlSessionFactoryRef = "masterSqlSessionFactory")
 public class MasterDataSourceConfig {
     // 精确到 master 目录，以便跟其他数据源隔离
-    static final String PACKAGE = "org.spring.springboot.dao.master";
+    static final String PACKAGE = "com.spring.springboot.dao.master";
     static final String MAPPER_LOCATION = "classpath:mapper/master/*.xml";
 
     @Value("${master.datasource.url}")
